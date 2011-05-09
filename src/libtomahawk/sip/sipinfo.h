@@ -41,8 +41,8 @@ public:
     void setVisible( bool visible );
     bool isVisible() const;
 
-    void setHost( const QHostInfo& host );
-    const QHostInfo host() const;
+    void setHost( const QString& host );
+    const QString host() const;
 
     void setPort( int port );
     int port() const;

@@ -780,10 +780,7 @@ void JabberPlugin::onNewIq(const Jreen::IQ& iq, int context)
             info.setVisible( sipMessage->visible() );
             if( sipMessage->visible() )
             {
-
-                QHostInfo hi;
-                hi.setHostName( sipMessage->ip() );
-                info.setHost( hi );
+                info.setHost( sipMessage->ip() );
                 info.setPort( sipMessage->port() );
                 info.setUniqname( sipMessage->uniqname() );
                 info.setKey( sipMessage->key() );
