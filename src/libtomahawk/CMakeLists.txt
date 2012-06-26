@@ -21,6 +21,7 @@ add_definitions( -DQT_SHAREDPOINTER_TRACK_POINTERS )
 set( libGuiSources
     ActionCollection.cpp
 
+    MetaDataEditor.cpp
     ContextMenu.cpp
     DropJob.cpp
     GlobalActionManager.cpp
@@ -305,6 +306,7 @@ set( libSources
 )
 
 set( libUI ${libUI}
+    MetaDataEditor.ui
     widgets/PlaylistTypeSelectorDialog.ui
     widgets/NewPlaylistWidget.ui
     widgets/SearchWidget.ui
